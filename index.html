@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body">
+    <div id="sticky">
+        <button type="button"  class="s s1">Clock</button>
+        <button type="button"  class="s s2">Alarm</button>
+        <button type="button"  class="s s3">Stopwatch</button>
+        <!-- <button type="button"  class="s s4">Timer</button> -->
+    </div>
+    <br>
+    <br>
+    <div id="content">
+        <div class="body C">
+            <h1 style="text-align: center;">Clock</h1>
+            <div id="mbody">
+                <h2 id="date"></h2>
+                <h1 id="time"> </h1>
+            </div>
+        </div>
+        
+        <div class="body A">
+            <h1 style="text-align: center;">Alarm</h1>
+            <div id="mbody">
+                <div id="alarm1">
+                    <button type="button" id="add">Set Alarm</button>
+                    <div id="hid">
+                        <br>
+                        <label for="">Hrs</label>
+                        <input type="number" id="h" min="1" max="12"  step="1">
+                        <label for="">Min</label>
+                        <input type="number" id="m" min="0" max="60"  step="1">
+                        <label for="">form</label>
+                        <select name="" id="opt">
+                            <option value="">AM</option>
+                            <option value="">PM</option>
+                        </select>
+                        <button id="set">SET</button>
+                    </div>
+                    <div id="al">
+                        <h3 id="alarmlist">Alarm added sucessfully!!!
+                        </h3>
+                        <audio src="alarmsong.mp3" controls id="song" style="display: none;">
+                        </audio> 
+                       
+                        <button id="editAlarm" style="display: none;">Edit Alarm</button>
+                    </div>
+                    
+            
+                </div>
+            </div>
+        </div>
+        <div class="body S">
+            <h1 style="text-align: center;">Stop Watch</h1>
+            <div id="mbody">
+                <div id="sw">
+                    <br>
+                    <br>
+                    <label for="" id="stoptimer"></label>
+                    <br>
+                    
+                    <br>
+                    <br>
+                    <div id="controls">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="body T">
+            <h1 style="text-align: center;">Timer</h1>
+            <div id="mbody">
+                timer
+            </div>
+     </div> -->
+</div>
+    
+    <script src="/JS/script.js"></script>
+</body>
+</html>
